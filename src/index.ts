@@ -1,28 +1,28 @@
 /**
 
- * The program shows how to get input
+ * The program shows how many logs 
 
- *   and deal with numbers.
+ *   can fit on a truck.
 
  *
 
- * By:      Mr. Coxall
+ * By:      Huzaifa Khalid
 
  * Version: 1.0
 
- * Since:   2020-01-01
+ * Since:   2022-09-14
 
  */
 
-import promptSync from "prompt-sync";
+import promptSync from 'prompt-sync'
 
-const prompt = promptSync();
 
-const name = prompt("What is your name? ");
-console.log(`Hey there ${String(name)}`);
-const ageString = prompt("What is your age? ");
-let ageNumber = parseInt(ageString);
-ageNumber = ageNumber - 10;
-console.log(`Age is >  ${ageNumber}`);
+const prompt = promptSync()
 
-console.log("\nDone.");
+
+const length = prompt('Enter log length (0.25,0.5,1): ')
+const length = Number(lengthString)
+const numberOfLogs = 1100 / (length*20)
+console.log(`${numberOfLogs} logs can fit on the truck`)
+
+console.log('\nDone.')
