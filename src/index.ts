@@ -14,17 +14,15 @@
 
  */
 
-import promptSync from 'prompt-sync'
+import promptSync from "prompt-sync";
 
+const prompt = promptSync();
 
-const prompt = promptSync()
+const name = prompt("What is your name? ");
+console.log(`Hey there ${String(name)}`);
+const ageString = prompt("What is your age? ");
+let ageNumber = parseInt(ageString);
+ageNumber = ageNumber - 10;
+console.log(`Age is >  ${ageNumber}`);
 
-
-const name = prompt('What is your name? ')
-console.log(`Hey there ${String(name)}`)
-const ageString = prompt('What is your age? ')
-let ageNumber = parseInt(ageString)
-ageNumber = ageNumber - 10
-console.log(`Age is >  ${ageNumber}`)
-
-console.log('\nDone.')
+console.log("\nDone.");
