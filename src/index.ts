@@ -14,15 +14,13 @@
 
  */
 
-import promptSync from 'prompt-sync'
+import promptSync from "prompt-sync";
 
+const prompt = promptSync();
 
-const prompt = promptSync()
+const length = prompt("Enter log length (0.25,0.5,1): ");
+const length = Number(lengthString);
+const numberOfLogs = 1100 / (length * 20);
+console.log(`${numberOfLogs} logs can fit on the truck`);
 
-
-const length = prompt('Enter log length (0.25,0.5,1): ')
-const length = Number(lengthString)
-const numberOfLogs = 1100 / (length*20)
-console.log(`${numberOfLogs} logs can fit on the truck`)
-
-console.log('\nDone.')
+console.log("\nDone.");
