@@ -1,5 +1,5 @@
 /**
- * The program shows how many logs 
+ * The program shows how many logs
  *   can fit on a truck.
  *
  * By:      Huzaifa Khalid
