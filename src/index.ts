@@ -1,17 +1,10 @@
 /**
-
  * The program shows how many logs 
-
  *   can fit on a truck.
-
  *
-
  * By:      Huzaifa Khalid
-
  * Version: 1.0
-
  * Since:   2022-09-14
-
  */
 
 import promptSync from "prompt-sync";
