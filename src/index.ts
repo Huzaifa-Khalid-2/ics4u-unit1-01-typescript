@@ -13,7 +13,9 @@ const prompt = promptSync();
 
 const length = prompt("Enter log length (0.25,0.5,1): ");
 const length = Number(lengthString);
-const numberOfLogs = 1100 / (length * 20);
+const truckMass = 1100;
+const logWeight = 20;
+const numberOfLogs = truckMass / (length * logWeight);
 console.log(`${numberOfLogs} logs can fit on the truck`);
 
 console.log("\nDone.");
