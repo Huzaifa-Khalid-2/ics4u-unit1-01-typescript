@@ -11,7 +11,7 @@ import promptSync from "prompt-sync";
 
 const prompt = promptSync();
 
-const length = prompt("Enter log length (0.25,0.5,1): ");
+const lengthString = prompt("Enter log length (0.25,0.5,1): ");
 const length = Number(lengthString);
 const truckMass = 1100;
 const logWeight = 20;
